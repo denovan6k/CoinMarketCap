@@ -1,7 +1,7 @@
 
 import React, { Suspense }  from 'react'
-import TableSkeleton from './skeleton/table-skeleton'
-import Trending from './skeleton/trending-skeleton'
+import TableSkeleton from './skeletonLoaders/table-skeleton'
+import Trending from './skeletonLoaders/trending-skeleton'
 import HomePage from './crypto/page'
 const Home = () => {
   return (

@@ -1,9 +1,9 @@
 import React,{Suspense} from 'react'
 
-import TableSkeleton from '@/app/skeleton/table-skeleton'
+import TableSkeleton from '@/app/skeletonLoaders/table-skeleton'
 import Table from '../../table/page'
 
-import Trending from '../../components/trending'
+import Trending from '../../trending/trending'
 
 
 const Crypto = () => {

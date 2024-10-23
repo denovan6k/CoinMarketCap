@@ -2,8 +2,8 @@
 import { columns } from "./columns"
 import { DataTable } from "./dataTable"
 import { useCoinStore } from "../store"
-import TableSkeleton from "../skeleton/table-skeleton"
-import TrendingSkeleton from "../skeleton/trending-skeleton"
+import TableSkeleton from "../skeletonLoaders/table-skeleton"
+import TrendingSkeleton from "../skeletonLoaders/trending-skeleton"
 
 
 export default function Table() {

@@ -7,7 +7,7 @@ import usdt from "../../../public/assets/usdt.png"
 import gainers from "../../../public/assets/gainers.png"
 import recent from "../../../public/assets/recent.png"
 import TrendingCard from "./trendingCard"
-import TrendingSkeleton from "../skeleton/trending-skeleton"
+import TrendingSkeleton from "../skeletonLoaders/trending-skeleton"
 import { useCoinStore } from "../store"
 
 const styles = {

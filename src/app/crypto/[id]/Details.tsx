@@ -7,8 +7,8 @@ import CoinName from '../detailsPageComponents/listingName';
 import { Component } from '../detailsPageComponents/Chart';
 import Rough from '../detailsPageComponents/Rough';
 import BTCUSDConverter from '../detailsPageComponents/converter';
-import TrendingSkeleton from '@/app/skeleton/trending-skeleton';
-import TableSkeleton from '@/app/skeleton/table-skeleton';
+import TrendingSkeleton from '@/app/skeletonLoaders/trending-skeleton';
+import TableSkeleton from '@/app/skeletonLoaders/table-skeleton';
 
 
 export default function Home() {

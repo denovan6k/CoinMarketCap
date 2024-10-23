@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import React, { Suspense } from 'react';
-import TrendingSkeleton from '@/app/skeleton/trending-skeleton';
-import TableSkeleton from '@/app/skeleton/table-skeleton';
+import TrendingSkeleton from '@/app/skeletonLoaders/trending-skeleton';
+import TableSkeleton from '@/app/skeletonLoaders/table-skeleton';
 // Dynamically import the Decrypto component
 const Decrypto = dynamic(() => import('./Details'), {
   suspense: true, // Enable suspense for better loading states
