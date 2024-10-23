@@ -55,7 +55,7 @@ export function DataTable<TData, TValue>({
     <div className="flex flex-col">
     <div className="flex items-center py-4">
     <Input
-          placeholder="Filter name..."
+          placeholder="Search..."
           value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("name")?.setFilterValue(event.target.value)
