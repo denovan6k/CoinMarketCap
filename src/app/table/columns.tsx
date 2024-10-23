@@ -171,13 +171,13 @@ export const columns: ColumnDef<Payment>[] = [
   },
 
   { 
-    accessorKey:'price',
-    accessorFn: (row) => row.quote.USD.price,
+    accessorKey:'price', //id is the same as the accessorKey
+    accessorFn: (row) => row.quote.USD.price, // set the price value
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")} // onClick sort the column by asc or desc order
         >
           Price
           <ArrowUpDown className="ml-2 h-4 w-4" />

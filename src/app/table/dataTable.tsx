@@ -1,6 +1,7 @@
 "use client"
 import * as React from "react"
 import { Button } from "@/components/ui/button"
+//Tanstack Table
 import {
   ColumnDef,
   flexRender,
@@ -12,7 +13,7 @@ import {
   SortingState,
   useReactTable,
 } from "@tanstack/react-table"
-
+// ShadCN Table
 import {
   Table,
   TableBody,
@@ -40,14 +41,14 @@ export function DataTable<TData, TValue>({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
-    onSortingChange: setSorting,
+    onSortingChange: setSorting, //sorting change
     
     getPaginationRowModel: getPaginationRowModel(),
     onColumnFiltersChange: setColumnFilters,
     getFilteredRowModel: getFilteredRowModel(),
     state: {
-      sorting,
-      columnFilters,
+      sorting, //storting state
+      columnFilters, //column filter state
     },
   })
 
@@ -56,9 +57,9 @@ export function DataTable<TData, TValue>({
     <div className="flex items-center py-4">
     <Input
           placeholder="Search..."
-          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
+          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""} // Set your default value here
           onChange={(event) =>
-            table.getColumn("name")?.setFilterValue(event.target.value)
+            table.getColumn("name")?.setFilterValue(event.target.value) // On input change set the filter value
           }
           className="max-w-sm"
         />
