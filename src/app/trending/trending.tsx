@@ -71,7 +71,7 @@ if (!coins || !data){
                 <div className="flex flex-col lg:flex-row   gap-1 -mr-2">
                     <p className="">The global crypto market cap is ${market_cap.toFixed(2)}
                           &nbsp; </p> 
-                         <div className="flex">
+                         <div className="lg:flex flex-col gap-[2px] ">
                      <span className='text-[14px] text-red-500 items-center flex space-x-2'>
                          <ArrowDown /> <p>2.02%</p> 
                      </span>

@@ -3,16 +3,16 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const apiKey = process.env.NEXT_PUBLIC_CMC_API_KEY; //get api from .env.local
+  const apiKey = process.env.NEXT_PUBLIC_CMC_API_KEY; //get api key from .env.local
 
 
-  //if apikey is falsy, then return error coinMarketCap is missing with status 500
+  //if apikey is falsy, then return error coinMarketCap Api key is missing with status 500
   if (!apiKey) {
     return NextResponse.json({ error: 'CoinMarketCap API key is missing.' }, { status: 500 });
   }
    //try catch block, to fetch data and catch any errors 
   try {
-    //read the documentation of coinmarketcap api to get the api key
+    //read the get api key from CoinMarketCap
     const response = await fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
       method: 'GET',
       headers: {

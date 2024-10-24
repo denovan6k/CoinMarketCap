@@ -36,9 +36,7 @@ export default function HomePage() {
 
   
 
-//   if (loading) {
-//     return <p>Loading...</p>;
-//   }
+
 
   return (
     <div>
